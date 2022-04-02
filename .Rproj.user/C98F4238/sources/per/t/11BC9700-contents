@@ -1,0 +1,31 @@
+---
+title: "Práctica-Informe estadístico"
+author: "Daniel Betancur"
+date: '2022-03-11'
+output:
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
+```
+
+# Análisis básico de una base de datos
+
+El primer paso consiste en leer la base de datos con los siguientes comandos.
+```{r lectura_datos, echo=FALSE}
+library(readxl)
+direccion <- 'C:/Users/User/Documents/Maestria/gestion_cuantitativa_riesgos/r_code/ejemplos/international-petroleum-world-cr.xlsx'
+datos <- read_xlsx(direccion)
+```
+Las dimensiones de mi base de datos son:
+```{r, message=FALSE}
+library(magrittr)
+datos %>% dim()
+```
+
+Acorde a los resultados la base tiene 486 filas y 5 columnas 
+```{r}
+
+```
